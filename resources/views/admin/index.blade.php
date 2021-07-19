@@ -22,7 +22,7 @@
                 </tr>
             </thead>
             <tbody> --}}
-        {{-- @foreach ($packages as $package)
+        @foreach ($packages as $package)
             <div class="card">
                 <img src="{{ $package->image_url }}">
                 <dl>
@@ -34,7 +34,7 @@
                     <dd>{{ $package->city }}</dd>
                 </dl>
             </div>
-        @endforeach --}}
+        @endforeach
 
         {{-- @foreach ($packages as $package)
                     <tr>

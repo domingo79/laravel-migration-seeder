@@ -14,8 +14,8 @@ class PackageController extends Controller
      */
     public function index()
     {
-        // $packages = Package::all();
-        return view('admin.index');
+        $packages = Package::all();
+        return view('admin.index', compact('packages'));
     }
 
     /**
@@ -42,10 +42,10 @@ class PackageController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Package  $package
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Package $package)
+    public function show($id)
     {
         //
     }
@@ -53,10 +53,10 @@ class PackageController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Package  $package
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Package $package)
+    public function edit($id)
     {
         //
     }
@@ -65,10 +65,10 @@ class PackageController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Package  $package
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Package $package)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -76,10 +76,10 @@ class PackageController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Package  $package
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Package $package)
+    public function destroy($id)
     {
         //
     }

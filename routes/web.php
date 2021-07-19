@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\PackageController;
-use App\Package;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,7 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    // $packages = Package::all();
     return view('welcome');
 });
 
