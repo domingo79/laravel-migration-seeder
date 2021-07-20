@@ -19,6 +19,13 @@
 
     <!-- css -->
     {{-- <link rel="stylesheet" href="{{ asset('css/app.css') }}"> --}}
+    <style>
+        .conyainer {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+    </style>
 </head>
 
 <body>
